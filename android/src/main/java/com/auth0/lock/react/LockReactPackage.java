@@ -130,7 +130,7 @@ public class LockReactPackage implements ReactPackage {
      * @param reactContext react application context that can be used to create modules
      * @return list of native modules to register with the newly created catalyst instance
      */
-    @Override
+
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
@@ -143,7 +143,6 @@ public class LockReactPackage implements ReactPackage {
      * NOT USED. This is a required override
      * @see ReactPackage
      */
-    @Override
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return new ArrayList<>();
     }
@@ -152,7 +151,6 @@ public class LockReactPackage implements ReactPackage {
      * NOT USED. This is a required override
      * @see ReactPackage
      */
-    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return new ArrayList<>();
     }
